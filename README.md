@@ -1,5 +1,5 @@
 # Cellular-JS
-![OIG2 518S9MhrydchGFz35Gr2](https://github.com/ChrinaerDev/Cellular-JS/assets/121810236/c4295c6a-d91b-49c3-a6ac-7f297a95f512)
+![Capture](https://github.com/ChrinaerDev/Cellular-JS/assets/121810236/db8393ab-99cf-4849-bbdf-7345441d8ddf)
 
 A Javascript Library built to simulate the evolution of cells pattens in a 2D GRID using Conway's game of life algorithm 
 

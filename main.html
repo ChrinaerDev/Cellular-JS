@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental</title>
+</head>
+  <link rel="stylesheet" href="./cw.css">
+<body>
+    <div id="screenbox">
+        <!-- <canvas id="maincanvas"></canvas> -->
+    </div>
+     <!-- <script src="./constants canvas.js"></script> -->
+     <script src="./constants.js"></script>
+     <script src="./Cellular.js"></script>
+
+    <script>
+
+        var main = CreateInstance(
+            "screenbox",
+            "Screen_main",
+            {
+                pixel: 10,
+                dim: { x: 50, y: 50 }
+            },
+            true,
+            true
+        ).engine
+
+
+        let EnginesController = new Controller()
+
+        EnginesController.add(main)
+        EnginesController.branch(0)
+        document.addEventListener("keypress", (e) => {
+            // if (e.key == "o") {
+            //     EnginesController.branch(0)
+            // }
+            // if (e.key == "p") {
+            //     EnginesController.branch(1)
+            // }
+            if(e.key == "h"){
+               main.colorweight += 0.1  
+            }
+            if(e.key == "j"){
+               main.colorweight -= 0.1  
+            }
+            if(e.key == "k"){
+               main.colorweight = 3  
+            }
+        })
+
+        EnginesController.start()
+
+
+    </script>
+</body>
+
+</html>

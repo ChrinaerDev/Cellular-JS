@@ -1,0 +1,141 @@
+
+
+:root{
+
+--lifecell: rgb(255, 255, 255);
+--deathcell: #000000;
+--constcell: hsl(236, 100%, 31%);
+--normcell: hsl(0, 0%, 3%);
+
+--trans: 0.0s;
+
+--bord: rgb(19, 19, 19);
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    font-family: 'Franklin Gothic Medium';
+    /* background-image: url(../20240328_064451.jpg); */
+    background-size: cover;
+}
+
+
+
+#model{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(2, 147, 243, 0.13);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+}
+
+#screenbox,#screenbox2{
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    /* border: 2px solid rgb(44, 134, 219);
+    border-radius: 20px; */
+}
+#guibox{
+    width: 200px;
+    height: 497px;
+    margin-left: 10px;
+    background-color: rgb(65 65 67);
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#guibox #guiTitle{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+    background-color: #ffffff34;
+    font-family: system-ui;
+    padding-top: 0;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: blink;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.screen{
+width: fit-content;
+height: fit-content;
+overflow: hidden;
+background-color: rgba(47, 47, 241, 0);
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 0;
+margin: 0;
+border-radius: 10px;
+}
+
+.screen div{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    /* border-top: 1px solid var(--bord);
+    border-left: 1px solid var(--bord); */
+    display: block;
+    position: static;
+    opacity: 0.99999 !important;
+    /* transition: var(--trans); */
+}
+
+.life_pixel{
+ /* background-color: var(--lifecell); */
+ transition: 0s;
+ opacity: 0.6 !important;
+ 
+}
+
+.death_pixel{
+    background-color: var(--deathcell) !important;
+    transition: var(--trans);
+}
+
+.norm_pixel{
+    background-color: var(--normcell) !important;
+    transition: var(--trans);
+}
+
+.const_pixel{
+    /* background-color: var(--constcell); */
+    transition: 0s;
+    /* filter: brightness(1px) !important; */
+    
+    /* border: 1px solid rgb(1, 41, 1); */
+    
+}
+
+.n-pixel{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(15, 65, 23);
+    margin: 0;
+    padding: 0;
+}
+
+#Screen,#Screen2 div:hover{
+    /* transition: var(--trans); */
+    background-color: rgb(196, 216, 199);
+}
+
+.patternStamp{
+    width: 100px;
+    height: 100px;
+    background-color: #56abfa46;
+    position: absolute;
+    border: 1px solid #289effb0;
+}
